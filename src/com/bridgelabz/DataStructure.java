@@ -1,8 +1,6 @@
 	package com.bridgelabz;
 
-	
-
-	public class DataStructure {
+	public class DataStructure	 {
 		  node head;
 		    node tail;
 		    public void push(int data) {
@@ -17,6 +15,15 @@
 		        }
 		    }
 
+		    public class node{
+
+		        public  int data;
+		        public node next;
+
+		        public node(int data) {
+		            this.data = data;
+		        }
+		    }
 
 		    public void display() {
 		        node temp=head;
@@ -26,13 +33,9 @@
 
 		        }
 		    }
-		    public class node{
-
-		        public  int data;
-		        public node next;
-
-		        public node(int data) {
-		            this.data = data;
-		        }
+		    public void add(int data) {
+		    	node newnode=new node(data);
+		    	tail.next=newnode;
+		    	tail=newnode;
 		    }
 	}

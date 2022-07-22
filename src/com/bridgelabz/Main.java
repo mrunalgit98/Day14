@@ -15,5 +15,15 @@ public class Main {
             d1.add(30);
             d1.add(70);
             d1.display();
+            System.out.println();
+            System.out.println("--------");
+            
+            	DataStructure d2=new DataStructure();
+            	d2.push(70);
+            	d2.push(56);
+            	d2.display();
+            	System.out.println();
+            	d2.insert(30);
+            	d2.display();
 	    }
 }

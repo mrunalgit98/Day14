@@ -38,4 +38,14 @@
 		    	tail.next=newnode;
 		    	tail=newnode;
 		    }
+		    
+		    public void insert(int data) {
+		    	node newnode=new node(data);
+		    	System.out.println("number to be added between 70 and 56 is " +data);
+		    	head.next=newnode;
+		    	newnode.next=tail;
+		    	
+		    	
+		    }
 	}
+	

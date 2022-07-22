@@ -18,12 +18,26 @@ public class Main {
             System.out.println();
             System.out.println("--------");
             
-            	DataStructure d2=new DataStructure();
-            	d2.push(70);
-            	d2.push(56);
-            	d2.display();
-            	System.out.println();
-            	d2.insert(30);
-            	d2.display();
+            DataStructure d2=new DataStructure();
+            d2.push(70);
+            d2.push(56);
+            d2.display();
+            System.out.println();
+            d2.insert(30);
+            d2.display();
+            
+            System.out.println();
+            DataStructure d3 =new DataStructure();
+            d3.push(70);
+            d3.push(30);
+            d3.push(56);
+            d3.display();
+          
+            Integer popelement=(Integer) d3.pop(70);
+            System.out.println();
+            System.out.println("data removed " +popelement);
+            d3.display();
+            
 	    }
+	      
 }

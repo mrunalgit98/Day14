@@ -1,6 +1,6 @@
 	package com.bridgelabz;
 
-	public class DataStructure	 {
+	public class DataStructure	<T> {
 		  node head;
 		    node tail;
 		    public void push(int data) {
@@ -15,12 +15,12 @@
 		        }
 		    }
 
-		    public class node{
+		    public class node<T>{
 
-		        public  int data;
+		        public  T data;
 		        public node next;
 
-		        public node(int data) {
+		        public node(T data) {
 		            this.data = data;
 		        }
 		    }
@@ -43,9 +43,20 @@
 		    	node newnode=new node(data);
 		    	System.out.println("number to be added between 70 and 56 is " +data);
 		    	head.next=newnode;
-		    	newnode.next=tail;
-		    	
+		    	newnode.next=tail;	
+		    }
+		    public T  pop(T data) {
+		    	node<T> newnode=new node<>(data);
+		    	node<T> popnode=head;
+		    	T element=popnode.data;
+		        node<T> nextnode=popnode.next;
+		        popnode.next=null;
+		        popnode.data=null;
+		        head=nextnode;
+		        return element;
 		    	
 		    }
+		    
+		    
 	}
 	

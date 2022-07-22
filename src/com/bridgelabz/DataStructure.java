@@ -68,5 +68,24 @@
 		    	return element;
 		    }
 		    
+		    public boolean search(T searchData) {
+		    node<T> newnode=new node<>(searchData);
+		    node<T> temp=head;
+		    	T searchedData=null;
+		    	while(temp!=null) {
+		    		if(temp.data==newnode.data) {
+		    			searchedData=temp.data;
+		    			System.out.println("searched data is " +searchData);
+		    			return true;
+		    		}
+		    		temp=temp.next;
+		    	}
+		    	return false;
+		    }
+		    
+		    
+		    
+		    
+		    
 	}
 	

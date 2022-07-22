@@ -83,7 +83,20 @@
 		    	return false;
 		    }
 		    
-		    
+		    public void insertAfter(T searchData,T insertData) {
+		   node<T> insertNode=new node<>(insertData);
+		   node<T>searchNode=new node<>(searchData);
+		   node<T>temp=head; 	
+		   while(temp!=null) {
+			   if(temp.data==searchData) {
+				   searchNode=temp;
+				   insertNode.next=searchNode.next;
+				   searchNode.next=insertNode;
+				 //  break;
+			   }
+			temp=temp.next;   
+		   }
+		   }
 		    
 		    
 		    

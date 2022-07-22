@@ -63,7 +63,22 @@ public class Main {
             else
             	System.out.println("data not found");
             
+            System.out.println();
+            System.out.println("-----------");
+
+            DataStructure d6=new DataStructure();
+            d6.push(70);
+            d6.push(30);
+            d6.push(56);
+            System.out.println("Before adding an node");
+            d6.display();
+            System.out.println();
+            d6.insertAfter(30,40);
+            System.out.println("After adding the node");
+            System.out.println();
+            d6.display();
             
+
             
 	    }
 	      

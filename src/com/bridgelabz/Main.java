@@ -37,6 +37,21 @@ public class Main {
             System.out.println();
             System.out.println("data removed " +popelement);
             d3.display();
+            System.out.println();
+            System.out.println("-----------");
+            
+            DataStructure d4=new DataStructure();
+            d4.push(70);
+            d4.push(30);
+            d4.push(56);
+            d4.display();
+            Integer popelement1=(Integer) d4.poplast(70);
+            System.out.println();
+            System.out.println("data removed is " +popelement1);
+            d4.display();
+            	
+            
+            
             
 	    }
 	      

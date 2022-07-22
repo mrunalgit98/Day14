@@ -56,7 +56,17 @@
 		        return element;
 		    	
 		    }
-		    
+		    public T poplast(T data) {
+		    	node<T> newnode = new node<>(data);
+		    	node<T> popnode=tail;
+		    	T element=popnode.data;
+		    	node<T> previousNode=head.next;
+		    	popnode.data=null;
+		    	popnode.next=null;
+		    	tail=previousNode;
+		    	tail.next=null;
+		    	return element;
+		    }
 		    
 	}
 	
